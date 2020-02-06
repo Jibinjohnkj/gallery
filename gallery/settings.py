@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'photos.apps.PhotosConfig',
+    'easy_thumbnails',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -116,6 +117,12 @@ REST_FRAMEWORK = {
 
 JWT_AUTH = {
     'JWT_ALLOW_REFRESH': True,
+}
+
+THUMBNAIL_ALIASES = {
+    '': {
+        'thumbnail': {'size': (50, 50), 'crop': True},
+    },
 }
 
 # Internationalization
