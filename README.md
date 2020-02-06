@@ -5,7 +5,7 @@ A simple Django application that provides APIs to upload, list, publish and dele
 A sample is hosted at http://jibinjohnkj.pythonanywhere.com/
 
 ## APIs
-
+- Login - /api-auth/login/
 - Post a photo 
 	- POST /api/photos/
 	- data = {  
